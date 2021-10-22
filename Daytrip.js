@@ -12,7 +12,13 @@ function randomDestination(location){
 let selectedDestination = randomDestination(destination)
 console.log(selectedDestination)
 
+// console.log(Math.floor(Math.random() *5 + 1)) gives me a random numner
+// console.log(destination[Math.floor(Math.random() *5)]) 
 
-// console.log(Math.floor(Math.random() *5 + 1))
-
-// console.log(destination[Math.floor(Math.random() *5)])
+function randomRestaurant (place){
+    let randomNumberFood = math.floor(math.random() *5)
+    let restaurantOption = place[randomNumberFood];
+    return restaurantOption
+}
+let selectedRestaurant = randomRestaurant(restaurants)
+console.log
