@@ -10,7 +10,7 @@ function randomDestination(location){
    return destinationSelection 
 }
 let selectedDestination = randomDestination(destination)
-console.log(selectedDestination)
+
 
 // console.log(Math.floor(Math.random() *5 + 1)) gives me a random numner
 // console.log(destination[Math.floor(Math.random() *5)]) 
@@ -21,7 +21,7 @@ function randomRestaurant (place){
     return restaurantOption
 }
 let selectedRestaurant = randomRestaurant(restaurants)
-console.log(selectedRestaurant)
+
 
 function randomtransportation(howToGetAround){
     let numberTransportation = Math.floor(Math.random() *5)
@@ -29,7 +29,7 @@ function randomtransportation(howToGetAround){
     return transportationOptions
 }
 let selectedTransportation = randomtransportation(transportation)
-console.log(selectedTransportation)
+n)
 
 function randomactivities (funThingsToDo){
     let randomNumberActivities = Math.floor(Math.random() *5)
@@ -37,4 +37,14 @@ function randomactivities (funThingsToDo){
     return activitiesOptions
 }
 let selectedactivities = randomactivities(activities)
-console.log(selectedactivities)
+
+
+function dayTripWasSelectedOrNot (answer){
+    if(answer === "yes"){
+        console.log("The Perfect Daytrip!")}
+     else{
+       console.log ("Let's try again!")
+        }
+    
+}
+dayTripWasSelectedOrNot(prompt("Do you like this day trip? Yes or No?"))
