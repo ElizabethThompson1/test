@@ -21,4 +21,12 @@ function randomRestaurant (place){
     return restaurantOption
 }
 let selectedRestaurant = randomRestaurant(restaurants)
-console.log
+console.log(selectedRestaurant)
+
+function randomtransportation(howToGetAround){
+    let numberTransportation = Math.floor(Math.random() *5)
+    let transportationOptions= howToGetAround[numberTransportation];
+    return transportationOptions
+}
+let selectedTransportation = randomtransportation(transportation)
+console.log(selectedTransportation)
