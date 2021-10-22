@@ -1,6 +1,6 @@
 "use strick"
 let destination = ["Utah", "California","Las Vegas", "Colorado", "Arizona"]
-let restaurants = [" Heart Attack Grill","Picnic","Sushi","Nacho Daddy","Bar and Grill"]
+let restaurants = ["Heart Attack Grill","Picnic","Sushi","Nacho Daddy","Bar and Grill"]
 let transportation = ["walk","car","Uber","bike","bus"]
 let activities = ["Watch a Movie", "Go on a Hike", "Sports event", "Dancing", "Paintballing"]
 
@@ -31,4 +31,10 @@ function randomtransportation(howToGetAround){
 let selectedTransportation = randomtransportation(transportation)
 console.log(selectedTransportation)
 
-function randomactivities (funThingsToDo){}
+function randomactivities (funThingsToDo){
+    let randomNumberActivities = Math.floor(Math.random() *5)
+    let activitiesOptions = funThingsToDo[randomNumberActivities]
+    return activitiesOptions
+}
+let selectedactivities = randomactivities(activities)
+console.log(selectedactivities)
